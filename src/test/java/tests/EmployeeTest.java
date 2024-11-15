@@ -14,7 +14,7 @@ public class EmployeeTest extends BaseTest {
     @Test
     public void testAddEmployee() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("Admin", "admin123");
+        loginPage.login("Admin", "admin123");  // Test Data
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
