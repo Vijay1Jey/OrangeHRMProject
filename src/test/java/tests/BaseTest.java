@@ -17,7 +17,7 @@ public class BaseTest {
     public void setUp() {
        // System.setProperty("webdriver.chrome.driver", "/OHRM/src/test/resources/Drivers/chrome.exe"); // Update the path
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver.manage().window().maximize(); // Maximize the window
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         basePage = new BasePage(driver);
     }
@@ -25,12 +25,12 @@ public class BaseTest {
     @BeforeMethod
     public void navigateToHomePage() {
         basePage.navigateTo("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"); // Update with your application URL
-    }
+    }   // Navigate to Home Page
 
     @AfterClass
     public void tearDown() {
         if (driver != null) {
-            driver.quit();
+            driver.quit(); // Close the Browser
         }
     }
 }
