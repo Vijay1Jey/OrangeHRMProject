@@ -52,11 +52,6 @@ public class EmployeePage extends BasePage {
     	System.out.println("Employee added successfully");
 
 	}
-//	protected void waitForElementToBeVisible(WebElement saveButton) 
-//	{
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-//		wait.until(ExpectedConditions.visibilityOf(saveButton));
-//	}
 
 }
 
